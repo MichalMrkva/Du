@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CirkularBuffer.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LogCirkulaBuffer.cs" />
+    <Compile Include="OnCreationListener.cs" />
+    <Compile Include="Priority.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
