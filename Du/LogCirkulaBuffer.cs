@@ -3,6 +3,7 @@
     public class LogCirkulaBuffer : CirkularBuffer<Log>
     {
         public delegate void Loged(Log value);
+
         private event Loged OnLoged;
 
         public LogCirkulaBuffer(int bufferSize) : base(bufferSize) { }
