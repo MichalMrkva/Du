@@ -6,6 +6,7 @@ namespace Du
     {
         protected int index;
         protected T[] buffer;
+        public int Length { get => buffer.Length; }
         public CirkularBuffer(int bufferSize)
         {
             index = 0;

@@ -4,9 +4,9 @@ namespace Du
 {
     public class OnCreationListener<T>
     {
-        public void Heard(T value)
+        public void HeardCreation(T value)
         {
-            Console.WriteLine($"Created new [{value.GetType()}]: \n{value}");
+            Console.WriteLine($"Created new [{value.GetType()}]: \n{value.ToString()}");
         }
     }
 }

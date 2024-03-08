@@ -1,4 +1,8 @@
-﻿namespace Du
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Linq;
+
+namespace Du
 {
     public class LogCirkulaBuffer : CirkularBuffer<Log>
     {
@@ -18,5 +22,7 @@
             OnLoged?.Invoke(value);
             base.Add(value);
         }
+
+        public override Log[] ToArray() => buffer.OrderBy(log => log.CreatedAt).ToArray();
     }
 }
