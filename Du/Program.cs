@@ -12,7 +12,7 @@ namespace Du
         {
             OnCreationListener<Log> listener = new OnCreationListener<Log>();
 
-            LogCirkulaBuffer logCirkulaBuffer = new LogCirkulaBuffer(3, listener.HeardCreation);
+            LogCirkulaBuffer logCirkulaBuffer = new LogCirkulaBuffer(16, listener.HeardCreation);
 
             for (int i = 0; i < 6; i++)
             {
